@@ -1,16 +1,75 @@
-# React + Vite
+# Make It Glow — Interactive Light Bulb
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small interactive light-bulb project built with **React**, **Vite**, and **CSS**. Switch the bulb on or off and use the colour picker to change its glow.
 
-Currently, two official plugins are available:
+## Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 1. Light switched off
+![Light bulb switched off](./src/images/bulb1.png)
 
-## React Compiler
+### 2. Light switched on
+![Light bulb switched on](./src/images/bulb2.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 3. Custom bulb colour and glow
+![Light bulb with a custom colour](./src/images/bulb3.png)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Toggle the light **ON** and **OFF**.
+- Choose a custom bulb colour using the colour picker.
+- Show a matching glow when the light is switched on.
+- Display the selected colour as a hexadecimal value.
+- Update the bulb appearance as the colour changes.
+- Simple, responsive interface.
+
+## Tech Stack
+
+- React
+- Vite
+- JavaScript / JSX
+- CSS
+
+## Run Locally
+
+1. Open a terminal in this project folder.
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open the local URL printed in the terminal, usually `http://localhost:5173`.
+
+## Project Structure
+
+```text
+light/
+├── src/
+│   ├── assets/
+│   ├── images/
+│   │   ├── bulb1.png
+│   │   ├── bulb2.png
+│   │   └── bulb3.png
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── public/
+├── index.html
+├── package.json
+├── README.md
+└── vite.config.js
+```
+
+## Screenshot Paths
+
+The screenshots are stored in `src/images/`. Keep the filenames unchanged so the images display correctly in this README on GitHub.
+
+---
+Built with React and Vite.
